@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">
+        <img class="nav-amazon-logo" src="./assets/amazon_logo.png" width="100" alt="">
+        </a>
+
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20" alt="">
+            <div>
+                <p>Deliver to</p>
+                <h1>India</h1>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <img src="./assets/dropdown_icon.png" height="12" alt="">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon">
+            <img src="./assets/search_icon.png" class="nav-search-icon" alt="">
+        </div>
+
+        <div class="nav-lang">
+            <img src="./assets/us_flag.png" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px" alt="">
+        </div>
+
+        <div class="nav-text" onclick="signin()">
+            <p>Hello, Sign in</p>
+            <h1>Account & Lists <img src="./assets/dropdown_icon.png" width="8px" alt=""></h1>
+        </div>
+        <div id="logout" onclick="logout()" style="display: block;">
+            logout
+        </div>
+
+        <div class="nav-text">
+            <p>Returns</p>
+            <h1>& Orders</h1>
+        </div>
+
+        <a href="" class="nav-cart">
+            <img src="./assets/cart_icon.png" width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+
+    <div class="nav-bottom">
+        <div>
+            <img src="./assets/menu_icon.png" width="25px" alt="">
+            <p>All</p>
+        </div>
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+    </div>
+
+    <div class="header-slider">
+        <a href="#" class="control-prev">&#129144</a>
+        <a href="#" class="control-next">&#129146</a>
+        <ul>
+            <img src="./assets/header6.jpg" class="header-img" alt="">
+            <img src="./assets/header1.jpg" class="header-img" alt="">
+            <img src="./assets/header2.jpg" class="header-img" alt="">
+            <img src="./assets/header3.jpg" class="header-img" alt="">
+            <img src="./assets/header4.jpg" class="header-img" alt="">
+            <img src="./assets/header5.jpg" class="header-img" alt="">
+           
+        </ul>
+    </div>
+
+    <div class="box-row header-box">
+        <div class="box-col" onclick="explore('LAPTOP')">
+            <h3>Deals in laptops</h3><br><br><br><br><br>
+            <img src="/Amazon Images/Laptop/laptop2.jpg" alt=""><br><br><br><br>
+            <a href="">Shop More</a>
+        </div>
+        <div class="box-col" onclick="explore('Shoes')">
+            <h3>Deals in clothing</h3>
+            <img src="/Amazon Images/Shoes/Screenshot (98).png" alt=""><br><br>
+            <a href="">Shop More</a>
+        </div>
+        <div class="box-col" onclick="explore('Headphones')">
+            <h3>Deals in Headphones</h3>
+            <img src="/Amazon Images/Headphones/headphone1.jpg" alt="">
+            <a href="">Shop More</a>
+        </div>
+        <div class="box-col" onclick="explore('mobile')">
+            <h3>Deals in mobile</h3>
+            <img src="/Amazon Images/Mobile/mobile4.jpg" alt=""><br><br>
+            <a href="">Shop More</a>
+        </div>
+       
+    </div>
+    <!-- MY CODE 2 -->
+    <div class="box-row">
+        <div class="box-col"onclick="explore('Infant')">
+            <h3>Infant</h3>
+            <img src="/Amazon Images/Kidswear/kidswear4.jpg" alt=""><br><br><br><br>
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col"onclick="explore('Kidswear')">
+            <h3>Kidswear</h3>
+            <img src="/Amazon Images/Sandals/Screenshot (27).png" alt=""><br><br>
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col"onclick="explore('Western Top')">
+            <h3>Western Tops</h3>
+            <img src="/Amazon Images/Shirts/shirt7.jpg" alt=""><br><br>
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col"onclick="explore('Formals')">
+            <h3>Formals</h3>
+            <img src="/Amazon Images/Shirts/shirt3.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+    <div class="product-slider">
+        <h2>Something exciting is coming your way....</h2>
+        <div class="products">
+            <img src="./Amazon Brands/Screenshot (11).png" alt="">
+            <img src="./Amazon Brands/Screenshot (13).png" alt="">
+            <img src="./Amazon Brands/Screenshot (15).png" alt="">
+            <img src="./Amazon Brands/Screenshot (16).png" alt="">
+            <img src="./Amazon Brands/Screenshot (18).png" alt="">
+            <img src="./Amazon Brands/Screenshot (12).png" alt="">
+            <img src="./Amazon Brands/Screenshot (17).png" alt="">
+            <img src="./Amazon Brands/Screenshot (14).png" alt="">
+            <img src="./assets/product1-9.jpg" alt="">
+            <img src="./assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Bata</h3>
+            <img src="/Amazon Images/womens sandal/sandal 4.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Puma</h3>
+            <img src="/Amazon Images/womens sandal/sandel3.jpg" alt=""><br><br><br><br>
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Nike</h3>
+            <img src="/Amazon Images/womens sandal/Screenshot (84).png" alt=""><br><br><br>
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Crocs</h3>
+            <img src="/Amazon Images/womens sandal/Screenshot (82).png" alt=""><br><br><br>
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+    <div class="product-slider-with-price">
+        <h2>Deals under $25</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (13).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>25% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (17).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>10% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (20).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>20% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/side 1.jpg" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>15% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (21).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (95).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>15% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (92).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/Screenshot (94).png" alt="">
+                </div>
+                <div class="product-offer">
+                    <p>27% off</p> <span>Deal</span>
+                </div>
+                <p class="product-price">$ <span>14.99</span> List Price:$19.55</p>
+                <h4>This product is best for you</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-slider">
+        <h2>Don't delay - sales today!</h2>
+        <div class="products">
+            <img src="./beauty/Screenshot (17).png" alt="">
+            <img src="./beauty/Screenshot (22).png" alt="">
+            <img src="./beauty/Screenshot (23).png" alt="">
+            <img src="./beauty/Screenshot (20).png" alt="">
+            <img src="./beauty/Screenshot (21).png" alt="">
+            <img src="./beauty/Screenshot (18).png" alt="">
+            <img src="./beauty/Screenshot (19).png" alt="">
+            <img src="./beauty/Screenshot (24).png" alt="">
+            
+         </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Upto 10% off | Lenovo  IdeaPad Slim 3 13th Gen Intel Core i7-13620H 15"(38.1cm)FHD IPS 300 Nits Thin & Light Laptop</h3>
+            <h3>50000₹</h3>
+            <img src="/Amazon Images/Laptop/laptop1.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Acer [Smartchoice] Aspire Lite AMD Ryzen 3 5300U Premium Thin and Light Laptop (Windows 11 )39.62 cm  </h3>
+            <h3>40000₹</h3>
+            <img src="/Amazon Images/Laptop/laptop7.jpg" alt=""><br>
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>Dell [Smartchoice 14 Thin & Light Laptop, Intel 12th Gen Core i5-1235U SSD/14.0" (35.56cm) FHD/Intel UHD</h3>
+            <h3>30000₹</h3>
+            <img src="/Amazon Images/Laptop/laptop6.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+        <div class="box-col">
+            <h3>ASUS VivoBook 15 (2021) Thin and Light Laptop, Dual Core Intel N4020, 15.6-inch (39.62 cm) HD</h3>
+            <h3>20000₹</h3>
+            <img src="/Amazon Images/Laptop/laptop8.jpg" alt="">
+            <a href="/">Shop More</a>
+        </div>
+    </div>
+
+    <footer>
+        <img src="./assets/amazon_logo.png" width="100" alt="">
+        <p>@ 1996-2024, Amazon.com, Inc. or its affiliates</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<!-- Footer -->
+<body>
+<section class="footer">
+        <div class="backtop">
+            <a href="#">Back to Top</a>
+        </div>
+        <div class="detail">
+            <div class="table">
+                <div>
+                    <div class="t-head">Get to Know Us</div>
+                    <ul>
+                        <li><a href="/html/carerrs.html">Careers</a></li>
+                        <li><a href="/html/aboutus.html">About Us</a></li>
+                        <li><a href="/html/help.html">Help</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Amazon Advices</a></li>
+                        <li><a href="#">Amazon Science</a></li>
+                    </ul>
+                </div>
+            
+                <div>
+                    <div class="t-head">Make Money with Us</div>
+                    <ul>
+                        <li>Sell Products on Amazon</li>
+                        <li>Sell on Amazon Business</li>
+                        <li>Sell Apps on Amazon</li>
+                        <li>Become an Affiliate</li>
+                        <li>Advertise your Products</li>
+                        <li>Host an Amazon Hub</li>
+                    </ul>
+                </div>
+            
+           
+                <div>
+                    <div class="t-head">Amazon Payment Products</div>
+                    <ul>
+                        <li>Amazon Business Cards</li>
+                        <li>Shop with Points</li>
+                        <li>Reload your Balance</li>
+                        <li>Amazon Currency Converter</li>
+                    </ul>
+                </div>
+            
+            
+                <div>
+                    <div class="t-head">Let Us Help You</div>
+                    <ul>
+                        <li>Amazon and COVID-19</li>
+                        <li>Your Account</li>
+                        <li>Yoyr Orders</li>
+                        <li>Shipping Rates and Policies</li>
+                        <li>Returns and Replacements</li>
+                        <li>Manage your Content & Devices</li>
+                        <li>Amazon Assistant</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-panel3">
+            <div class="logo">
+            </div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                &#169 1996-2023, Amazon.com, Inc.or its affiliates
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript/home.js"></script>
+</body>
+</html>
